@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>SIGN UP</title>
+</head>
+
+<body>
+    <header class="sticky-top bg-white border">
+		<!-- row-top -->
+		<!-- menu -->
+		<div class="container p-2">
+		  <nav class="navbar navbar-expand-lg bg-white ">
+			<div class="container px-0 mx-0">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+				<a class="navbar-brand" href="#"><img src="IMG/Logo/DIMO tach nen - Copy.png" alt=""
+					style="width: 100px;"></a>
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active fw-bolder" aria-current="page" href="?mod=page&act=home">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-black fw-bolder" href="?mod=page&act=category&id=5">SHOP</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-black fw-bolder" href="?mod=page&act=category&id=6">ABOUT</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-black fw-bolder" href="?mod=page&act=category&id=7">COUNT</a>
+				  </li>
+				</ul>
+				<form method='post' action='?mod=page&act=search' class="d-flex" role="search" style="width: 280px;">
+				  <input class="form-control me-2 rounded-pill position-relative" type="search"
+					placeholder="Search for a product" name="search">
+				  <div>
+					<input class="btn btn-outline-warning rounded-pill position-absolute" type="submit" value="Search"
+					  name="btn_search" style="right: 144px;">
+				  </div>
+				</form>
+				<div class="d-flex align-items-center ms-5">
+				  <div id="cart"
+					class="position-relative d-flex justify-content-center align-items-center rounded-circle bg-black bg-opacity-10 px-2 py-1 ">
+					<a href="?mod=cart&act=list">
+					  <i class="bi bi-cart fs-5  fw-bolder text-black"></i>
+					</a>
+					<div class="">
+					  <span id="amount-cart"
+						class="text-white  position-absolute top-0 start-75 translate-middle bg-danger px-2 rounded-circle">
+						<!-- <?php
+										if(isset($_SESSION['cart'])){
+										  echo count($_SESSION['cart']);
+										}else echo 0;
+									   ?> -->
+					  </span>
+					</div>
+				  </div>
+				  <div id="account"
+					class="d-flex justify-content-center align-items-center rounded-circle bg-black bg-opacity-10  mx-2 px-2 py-1">
+					<a class="text-decoration-none text-white" href="?mod=user&act=info">
+					  <a class="text-decoration-none text-white" href="?mod=user&act=login">
+					<i class="bi bi-person-circle fw-bolder fs-5 text-secondary"></i></a>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</nav>
+		</div>
+	  </header>
+    <table width="100%">
+        <tr>
+            <td valign="top" width="50%" class="imglogin">
+                <img src="IMG/Imgpage/imgsign.png" alt="Image" style="width:100%;height:750px;">
+            </td>
+            <td valign="top" width="50%">
+                <form action="" class="containersignup" method="post">
+                    <div id="login">
+                        <center>
+                            <img src="IMG/Logo/DIMO tach nen - Copy.png" alt="" class="imglogo">
+                        </center>
+                        <h3>MY ACCOUNT</h3>
+                        <ul class="choose">
+                            <li>
+                                <a href="">LOG IN</a>
+                            </li>
+                            <li>
+                                <a href="">SIGN UP</a>
+                            </li>
+                        </ul>
+                        <div class="inputs">
+                            <input type="text" name="Username" required>
+                            <label class="label">User Name</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" name="PassWord" required>
+                            <label class="label">Pass Word</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" name="Phone" required>
+                            <label class="label">Phone</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" name="Email" required>
+                            <label class="label">Email address</label>
+                        </div>
+                        <a href="" class="btnlogin">LOG IN</a>
+                        <p>Get emails you’ll actually read, with new products, sale
+                            alerts, events, exclusive content, and more.</p>
+                        <p>Want to know more about how and why Dimo uses your
+                            personal information? <a href="" style="font-weight: 900;">Read our Privacy Notice.</a>
+                        </p>
+                    </div>
+                </form>
+
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+</HTML>
